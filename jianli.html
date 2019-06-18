@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>陈大斌简介</title>
+    <link rel="stylesheet" href="jianli.css">
+    <link rel="stylesheet" href="loading.css">
+    <script src="//at.alicdn.com/t/font_1104789_i0dtlcschso.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; 
+           height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+        .site-welcome{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #888;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .site-welcom.active{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="siteWelcome" class="site-welcome active">
+            <div class="loading"></div>
+    </div>
+    <div id="topNavBar" class="topNavbar">
+        <div class="topNavbar-inner clearfix">
+        <a class="logo" href="#" alt="logo" style="float:left;">
+            <span class="rs">RS</span>
+            <span class="card">card</span>
+        </a>
+        <nav class="menu" style="float:right;">
+            <ul class="clearfix">
+                <li class="menuTigger"><a href="#siteAbout">关于</a></li>
+                <li class="menuTigger"><a href="#siteSkills">技能</a></li>
+                <li class="menuTigger" >
+                    <a href="#siteWorks">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li class="menuTigger">
+                    <a href="#">博客</a>
+                    <ul class="submenu">
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+                </li>
+                <li class="menuTigger"><a href="#">日历</a></li>
+                <li class="menuTigger"><a href="#">联系方式</a></li>
+                <li class="menuTigger"><a href="#">其他</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div data-x id="siteAbout" class="card">
+            <div class="pictureAndText clearfix">
+                <div  class="picture">
+                    <img src="1.png" alt="头像" width="299px" height="345px" alt="头像">
+                </div>
+                <div class="text">
+                        <span class="welcome">Hello
+                            <span class="triangle"></span>
+                        </span>
+                        <h1>陈大斌</h1>
+                        <p>前端开发工程师</p>
+                        <hr>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd>24</dd>
+                            <dt>所在城市</dt>
+                            <dd>蚌埠</dd>
+                            <dt>邮箱</dt>
+                            <dd>2479015570@qq.com</dd>
+                            <dt>手机</dt>
+                            <dd>18355093238</dd>
+                        </dl>
+                </div>
+            </div>
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-git"></use></svg></a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use></svg></a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jirengulogoyellow"></use></svg></a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-iconfontweibo"></use> </svg></a>
+        </footer>
+    </div>
+    <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./resume.pdf.txt" target="blank" download="">下载PDF简历</a>
+    </p>
+    
+    <p class="selfIntroduction">
+        "陈大斌，刚入门的前端工程师，现在在饥人谷学习"
+        <br>
+        "技能：前端开发"
+    </p>
+    </main>
+    <section data-x id="siteSkills" class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3> HTML</h3>
+                <div class="progressBar" style="width:90%">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                 <h3> JS</h3>
+                <div class="progressBar" style="width:90%">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li> 
+                <h3> JQuery</h3>
+                <div class="progressBar" style="width:10%">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                 <h3> VUE</h3>
+                <div class="progressBar" style="width:70%">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li> 
+                <h3> React</h3>
+                <div class="progressBar" style="width:50%">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li> 
+                <h3> HTTP</h3>
+                <div class="progressBar" style="width:30%">
+                    <div class="progress"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section data-x id="siteWorks" class="portfolio">
+        <h2>作品集</h2>
+        <nav>
+            <ol class="clearfix">
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生JS&CSS</li>
+            </ol>
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
+        </nav>
+        <script>
+        portfolio1.onclick=function(){
+            portfolioBar.className="bar state-1"
+        }
+        portfolio2.onclick=function(){
+            portfolioBar.className="bar state-2"
+        }
+        portfolio3.onclick=function(){
+            portfolioBar.className="bar state-3"
+        }
+        </script>
+        <div class="works" style="height:597px;">
+            <div class="big" style="top:0; left:0;">
+                <img src="./3.JPG" height="606px" width="576" alt="阳光">
+            </div>
+            <div class="small" style="top:0; left:625px;">
+                    <img src="./4.JPG" height="293px" width="278px" alt="教学">
+            </div>
+            <div class="small" style="top:312px; left:625px;">
+                    <img src="./5.JPG" height="293px" width="278px" alt="阳光">
+            </div>
+        </div>
+    </section>
+    <script>
+        setTimeout(function(){
+            siteWelcome.classList.remove('active')
+        },100)
+        //添加offset类
+        let specialTags = document.querySelectorAll('[data-x]')
+        for(let i =0;i<specialTags.length;i++){
+            specialTags[i].classList.add('offset')
+        }
+        setTimeout(function(){
+            yyy()
+        },100)
+        window.onscroll=function(x){
+            if (window.scrollY>0){
+                topNavBar.classList.add('sticky')
+            } else{
+                topNavBar.classList.remove('sticky') 
+            }
+        }
+        function yyy(){
+            let specialTags = document.querySelectorAll('[data-x]')
+            let minIndex = 0 //minIdex就是离窗口顶部最近的元素
+            for(let i = 1;i<specialTags.length;i++){
+            if(Math.abs(specialTags[i].offsetTop-window.scrollY) < Math.abs(specialTags[minIndex].offsetTop-window.scrollY)){
+                minIndex = i
+             }
+            }
+        specialTags[minIndex].classList.remove('offset')
+        let id =specialTags[minIndex].id
+        let a = document.querySelector('a[href="#'+id+'"]')
+        let li = a.parentNode
+        let brothersAndme= li.parentNode.children
+        for(let i =0;i<brothersAndme.length;i++){
+            brothersAndme[i].classList.remove('highlight')
+        }
+        li.classList.add('highlight')
+        }
+        
+        let liTags = document.getElementsByClassName('menuTigger')
+        for(let i=0;i<liTags.length;i++){
+            liTags[i].onmouseenter = function(x){
+                x.currentTarget.classList.add('active')
+            }
+            liTags[i].onmouseleave = function(x){
+                x.currentTarget.classList.remove('active')
+            }
+        }
+        let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+        for(let i = 0; i<aTags.length;i++){
+            aTags[i].onclick=function(x){
+                x.preventDefault()
+                let a = x.currentTarget
+                let href=a.getAttribute("href")
+                let element = document.querySelector(href)
+                let top = element.offsetTop
+                let n = 25 //一共多少次
+                let duration = 500/n //多少时间动一次
+                let currentTop = window.scrollY
+                let targetTop = top -80
+                let distance = (targetTop-currentTop)/n
+                let i = 0
+                let id = setInterval(()=>{
+                    if(i ===n){
+                        window.clearInterval(id)
+                        return
+                    }
+                    i=i+1
+                    window.scrollTo(0,currentTop+distance*i)
+                },duration)
+            }
+        }
+    </script>
+</body>
+</html>
